@@ -1,0 +1,9 @@
+[build]
+  command = "sh setup.sh && streamlit run app.py"
+  publish = "."
+  functions = "functions"
+  
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
